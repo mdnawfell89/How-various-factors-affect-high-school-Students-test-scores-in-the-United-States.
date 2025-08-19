@@ -104,11 +104,11 @@ per_f_male= (total_fail[1]/(total_fail[0]+total_fail[1]))*100
 
 fig, axs = plt.subplots(1, 2, figsize=(12, 6))
 axs[0].pie([per_pass_female, per_pass_male], labels=['Female', 'Male'], autopct='%1.1f%%', startangle=140, colors=["#66ff78", "#56b3d8"])
-axs[0].set_title('Pass % by Gender')
+axs[0].set_title('Pass Percentage')
 axs[0].axis('equal')
 
 axs[1].pie([per_f_female, per_f_male], labels=['Female', 'Male'], autopct='%1.1f%%', startangle=140, colors=["#66ff78", "#56b3d8"])
-axs[1].set_title('Fail % by Gender')
+axs[1].set_title('Fail Percentage')
 axs[1].axis('equal')
 
 plt.suptitle("Gender-Based Comparison of Student Performance in All Tests", fontweight='bold')
